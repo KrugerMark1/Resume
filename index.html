@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Marcos Kruger - Professional Resume</title>
+    <title>Your Name - Professional Resume</title>
     <style>
         body {
             font-family: 'Arial', sans-serif;
-            background-color: #f4f4f4;
+            background-image: url('background-image-url.jpg');
+            background-size: cover;
+            background-attachment: fixed;
             color: #333;
             line-height: 1.6;
             margin: 0;
@@ -14,10 +16,13 @@
         .container {
             width: 80%;
             margin: auto;
-            overflow: hidden;
+            background: rgba(255, 255, 255, 0.8); /* Semi-transparent background */
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
         }
         header {
-            background: #333;
+            background: #444;
             color: #fff;
             padding-top: 30px;
             min-height: 70px;
@@ -58,16 +63,18 @@
             color: #ffffff;
             font-weight: bold;
         }
-        .about {
-            padding: 15px 0 15px 0;
-        }
-        .experience, .education, .additional {
+        .about, .experience, .education, .additional {
             margin-bottom: 20px;
-            padding: 20px;
             background: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
         }
-        .job {
-            margin-bottom: 15px;
+        h2 {
+            color: #e8491d;
+        }
+        .job h3 {
+            color: #444;
         }
     </style>
 </head>
@@ -75,7 +82,7 @@
     <header>
         <div class="container">
             <div id="branding">
-                <h1>Your Name</h1>
+                <h1>Marcos Kruger</h1>
             </div>
             <nav>
                 <ul>
