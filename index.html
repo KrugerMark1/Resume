@@ -4,95 +4,61 @@
     <title>Your Name - Professional Resume</title>
     <style>
         body {
-            font-family: 'Arial', sans-serif;
-            background-image: url('background-image-url.jpg');
-            background-size: cover;
-            background-attachment: fixed;
-            color: #333;
+            font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+            background-color: #f9f9f9;
+            color: #333333;
             line-height: 1.6;
             margin: 0;
             padding: 0;
         }
         .container {
-            width: 80%;
-            margin: auto;
-            background: rgba(255, 255, 255, 0.8); /* Semi-transparent background */
+            width: 85%;
+            max-width: 1200px;
+            margin: 20px auto;
             padding: 20px;
-            border-radius: 8px;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         }
         header {
-            background: #444;
-            color: #fff;
-            padding-top: 30px;
-            min-height: 70px;
-            border-bottom: #888 3px solid;
+            background-color: #4a4a4a;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
         }
-        header a {
-            color: #fff;
-            text-decoration: none;
-            text-transform: uppercase;
-            font-size: 16px;
-        }
-        header ul {
-            padding: 0;
+        header h1 {
             margin: 0;
-            list-style: none;
-            overflow: hidden;
+            font-size: 28px;
         }
-        header li {
-            float: left;
-            display: inline;
-            padding: 0 20px 0 20px;
-        }
-        header #branding {
-            float: left;
-        }
-        header #branding h1 {
-            margin: 0;
-        }
-        header nav {
-            float: right;
-            margin-top: 10px;
-        }
-        header .highlight, header .current a {
-            color: #e8491d;
-            font-weight: bold;
-        }
-        header a:hover {
-            color: #ffffff;
-            font-weight: bold;
-        }
-        .about, .experience, .education, .additional {
+        section {
             margin-bottom: 20px;
-            background: #fff;
-            padding: 20px;
-            border-radius: 8px;
-            box-shadow: 0 0 10px rgba(0,0,0,0.1);
         }
         h2 {
-            color: #e8491d;
+            background-color: #4a90e2;
+            color: white;
+            padding: 8px 0;
+            margin-top: 0;
+            text-align: center;
+            border-radius: 5px;
         }
-        .job h3 {
-            color: #444;
+        .job-title {
+            font-weight: bold;
+            color: #333333;
         }
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        ul li:before {
+            content: '▪ ';
+            color: #4a90e2;
+        }
+        /* Additional styling as needed */
     </style>
 </head>
 <body>
     <header>
-        <div class="container">
-            <div id="branding">
-                <h1>Marcos Kruger</h1>
-            </div>
-            <nav>
-                <ul>
-                    <li class="current"><a href="#summary">About Me</a></li>
-                    <li><a href="#experience">Experience</a></li>
-                    <li><a href="#education">Education</a></li>
-                    <li><a href="#additional">Skills & Languages</a></li>
-                </ul>
-            </nav>
-        </div>
+        <h1>Your Name</h1>
     </header>
 
     <div class="container">
