@@ -1,90 +1,127 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Your Name - Creative Resume</title>
+    <title>Your Name - Professional Resume</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Arial', sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            line-height: 1.6;
             margin: 0;
             padding: 0;
-            background: #f0f0f0;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
         }
         header {
-            background-color: #333;
-            color: white;
-            text-align: center;
-            padding: 20px 0;
+            background: #333;
+            color: #fff;
+            padding-top: 30px;
+            min-height: 70px;
+            border-bottom: #888 3px solid;
         }
-        nav ul {
-            list-style-type: none;
+        header a {
+            color: #fff;
+            text-decoration: none;
+            text-transform: uppercase;
+            font-size: 16px;
+        }
+        header ul {
             padding: 0;
-            text-align: center;
-            background: #444;
+            margin: 0;
+            list-style: none;
+            overflow: hidden;
+        }
+        header li {
+            float: left;
+            display: inline;
+            padding: 0 20px 0 20px;
+        }
+        header #branding {
+            float: left;
+        }
+        header #branding h1 {
             margin: 0;
         }
-        nav ul li {
-            display: inline;
-            margin-right: 20px;
+        header nav {
+            float: right;
+            margin-top: 10px;
         }
-        nav ul li a {
-            color: white;
-            text-decoration: none;
-            padding: 5px 10px;
+        header .highlight, header .current a {
+            color: #e8491d;
+            font-weight: bold;
         }
-        nav ul li a:hover {
-            background-color: #555;
+        header a:hover {
+            color: #ffffff;
+            font-weight: bold;
         }
-        section {
+        .about {
+            padding: 15px 0 15px 0;
+        }
+        .experience, .education, .additional {
+            margin-bottom: 20px;
             padding: 20px;
-            margin: 20px;
-            background: white;
-            border-radius: 8px;
-            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            background: #fff;
         }
-        h2 {
-            color: #333;
+        .job {
+            margin-bottom: 15px;
         }
-        /* Additional styling can be added here */
     </style>
 </head>
 <body>
     <header>
-        <h1>Your Name</h1>
-        <p>Email: you@example.com | Phone: 123-456-7890</p>
+        <div class="container">
+            <div id="branding">
+                <h1>Your Name</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li class="current"><a href="#summary">About Me</a></li>
+                    <li><a href="#experience">Experience</a></li>
+                    <li><a href="#education">Education</a></li>
+                    <li><a href="#additional">Skills & Languages</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
 
-    <nav>
-        <ul>
-            <li><a href="#experience">Experience</a></li>
-            <li><a href="#education">Education</a></li>
-            <!-- More links -->
-        </ul>
-    </nav>
+    <div class="container">
+        <section id="summary" class="about">
+            <h2>Career Summary</h2>
+            <p>Responsible individual with notable management and supervisory experience. Driven to analyze, learn, and innovate within a corporate environment. Boasts a strong background in communication, problem-solving, time management, and data analysis.</p>
+        </section>
 
-    <section id="summary" style="background: url('background-image.jpg'); color: black;">
-        <h2>About Me</h2>
-        <p>
-            Responsible individual with notable management and supervisory experience. Driven to analyze, learn, and innovate within a corporate environment. 
-            Boasts a strong background in communication, problem-solving, time management, and data analysis.
-        </p>
-        
-    </section>
+        <section id="experience" class="experience">
+            <h2>Experience</h2>
+            <div class="job">
+                <h3>Exela Tech. at Goldman Sachs, New York, NY</h3>
+                <p><strong>June 2017 - Present</strong><br>Shipping and Receiving Supervisor</p>
+                <ul>
+                    <li>Operational Leadership: Oversaw the daily functions of the mailroom...</li>
+                    <li>IT Integration: Developed and rolled out comprehensive IT instructions...</li>
+                    <!-- Add other points -->
+                </ul>
+            </div>
+            <div class="job">
+                <h3>Exela Tech. at Goldman Sachs, New York, NY</h3>
+                <p><strong>July 2020 - July 2021</strong><br>Unaddressed Mail Systems Associate / Document Research</p>
+                <ul>
+                    <li>Ensure compliance in handling and researching undelivered legal/tax documents and checks.</li>
+                    <!-- Add other points -->
+                </ul>
+            </div>
+        </section>
 
-    <section id="experience">
-        <h2>Experience</h2>
-        <!-- Use a timeline or creative list to show experience -->
-    </section>
+        <section id="education" class="education">
+            <h2>Education</h2>
+            <p><strong>CUNY School of Professional Studies</strong><br>Bachelor’s in Information System, Expected 2024</p>
+            <p><strong>City University of New York, BMCC</strong><br>Associate Degree in Liberal Arts, January 2017<br>Dean’s List</p>
+        </section>
 
-    <section id="skills">
-        <h2>Skills</h2>
-        <!-- Use CSS or JavaScript to create skill graphs or icons -->
-    </section>
-
-    <section id="education">
-        <h2>Education</h2>
-        <!-- Use a creative layout for education history -->
-    </section>
-
-    <!-- Add other sections as needed -->
-</body>
-</html>
+        <section id="additional" class="additional">
+            <h2>Additional Information</h2>
+            <p>Languages: Fluent Spanish</p>
+            <p>Soft Skills: Experienced using Microsoft Excel, Word,
